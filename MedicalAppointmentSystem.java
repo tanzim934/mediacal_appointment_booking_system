@@ -17,9 +17,10 @@ public class MedicalAppointmentSystem {
             appointments = FileManager.readAppointments(APPOINTMENT_FILE);
 
             if (doctors.isEmpty()) {
-                doctors.add(new Doctor(1, "Rahul Sharma", "Cardiologist"));
-                doctors.add(new Doctor(2, "Anjali Mehta", "Dermatologist"));
-                doctors.add(new Doctor(3, "Vikram Patel", "Neurologist"));
+                doctors.add(new Doctor(1,"DR Israt Jahan,Cardiologist"));
+                doctors.add(new Doctor(2,"DR Tanzim Hasan,Dermatologist"));
+                doctors.add(new Doctor(3,"DR Samira Afroz Mim,Neurologist"));
+                doctors.add(new Doctor(4,"DR Parvej Mosharof,Gynecologist"));
                 FileManager.writeToFile(doctors, DOCTOR_FILE);
             }
 
